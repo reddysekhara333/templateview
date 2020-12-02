@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>read</title>
+</head>
+<body>
+<div class="container" align="center">
+    <h1>Show all student all progess report</h1><hr>
+    <table border="6px">
+        <thead>
+        <th>Sname</th>
+        <th>Sid</th>
+        <th>Smarks</th>
+        <th>Sclass</th>
+        <th>Actions</th>
+        </thead>
+        {% for i in hh %}
+            <tr>
+            <td>{{ i.sname }}</td>
+            <td>{{ i.sid }}</td>
+            <td>{{ i.smarks }}</td>
+            <td>{{ i.sclass }}</td>
+            <td><a href="/update/{{ i.id }}">update</a>&nbsp&nbsp<a href="/delete/{{ i.id }}">delete</a> </td>
+            </tr>
+        {% endfor %}
+    </table>
+</div>
+
+</body>
+</html>
