@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>list of all author and book</title>
+</head>
+<body>
+<h1>show all book publishers</h1><hr>
+{%  for book in book_list %}
+   <h2><a href="/{{ book.id}}">{{ book.Name }}</a> </h2>
+{% endfor %}
+</body>
+</html>
