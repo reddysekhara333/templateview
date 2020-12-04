@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% extends 'test/base.html' %}
+{% block chinna %}
+<h1>delete on {{ student.id }} this person detiles</h1>
+    <form method="post">
+    {% csrf_token %}
+    <input type="submit" value="delete" class="btn btn-primary btn-dangeor"><br>&nbsp&nbsp
+    </form>
+
+  <a href="/list"  class="btn btn-primary btn-lag">cancel</a><br><br>
+
+
+{% endblock %}

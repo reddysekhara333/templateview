@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends 'test/base.html' %}
+{% block chinna %}
+   <h1>show one student name{{ student_detail.name }}</h1>
+   <a> {{ student_detail.name }}</a><br>
+    <a> {{ student_detail.marks }}</a><br>
+    <a> {{ student_detail.school }}</a><br>
+    <a> {{ student_detail.cls }}</a><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+
+    <a href="/up/{{student_detail.id}}"  class="btn btn-primary btn-lag">update</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <a href="/create"  class="btn btn-primary btn-lag">create</a>&nbsp&nbsp&nbsp&nbsp&nbsp
+      <a href="/de/{{student_detail.id}}"  class="btn btn-primary btn-dangeor">delete</a><br>
+
+{% endblock %}

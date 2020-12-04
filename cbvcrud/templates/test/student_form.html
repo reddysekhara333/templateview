@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+{% extends 'test/base.html' %}
+{% block chinna %}
+    <h1>show all student detalies </h1><hr>
+    <form method="post">
+    {{ form.as_p }}
+    {% csrf_token %}
+    <input type="submit" value="update /creae" class="btn btn-primary">
+    </form>
+
+{% endblock %}

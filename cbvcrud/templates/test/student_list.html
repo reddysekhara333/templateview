@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends 'test/base.html' %}
+{% block chinna %}
+    <h1>show all student detalies </h1><hr>
+    {% for i in student_list %}
+        <ul>
+       <a href="/{{ i.id }}"> <li>{{ i.name }}</li></a>
+
+        </ul>
+
+    {% endfor %}
+
+
+{% endblock %}
